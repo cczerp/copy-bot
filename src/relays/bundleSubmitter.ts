@@ -13,7 +13,7 @@ const logger = pino();
 export interface BundleSubmissionPayload {
   jsonrpc: string;
   method: string;
-  params: Record<string, unknown>[];
+  params: unknown[];
   id: number;
 }
 

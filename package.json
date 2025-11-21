@@ -30,8 +30,7 @@
     "pino": "^8.17.2",
     "ws": "^8.14.2",
     "decimal.js": "^10.4.3",
-    "@aave/core-v3": "^1.19.16",
-    "@balancer-labs/v3-deployments": "^1.0.0",
+    "@aave/core-v3": "^1.19.0",
     "typescript": "^5.3.3"
   },
   "devDependencies": {

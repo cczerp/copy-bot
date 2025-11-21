@@ -243,7 +243,8 @@ export class SimulationEngine {
 
       // Estimate gas
       const gasEstimate = await this.anvilProvider.estimateGas(tx);
-      const gasPrice = await this.anvilProvider.getGasPrice();
+      const feeData = await this.anvilProvider.getFeeData();
+      const gasPrice = feeData.gasPrice || BigInt(30000000000); // Default 30 gwei
       const gasCost = gasEstimate * gasPrice;
 
       logger.debug(
