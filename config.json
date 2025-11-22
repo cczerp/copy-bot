@@ -1,0 +1,78 @@
+{
+  "risk_management": {
+    "max_risk_per_trade_percent": 1.5,
+    "max_daily_loss_percent": 5.0,
+    "max_drawdown_percent": 10.0,
+    "drawdown_position_reduction": 0.5
+  },
+  "position_sizing": {
+    "max_position_size_percent": 10.0,
+    "max_portfolio_exposure_percent": 50.0,
+    "use_fixed_fractional": true
+  },
+  "stop_loss_take_profit": {
+    "mandatory_stop_loss": true,
+    "min_risk_reward_ratio": 2.0,
+    "use_trailing_stop": true,
+    "breakeven_trigger_ratio": 1.0,
+    "partial_profit_taking": true,
+    "partial_exit_percent": 50.0,
+    "partial_exit_ratio": 1.0
+  },
+  "trade_selection": {
+    "min_win_rate_percent": 55.0,
+    "min_profit_factor": 1.5,
+    "max_historical_drawdown_percent": 25.0,
+    "min_profitable_months_percent": 70.0,
+    "min_trade_history_count": 100
+  },
+  "market_conditions": {
+    "high_volatility_threshold": 30.0,
+    "volatility_position_reduction": 0.5,
+    "min_daily_volume_usd": 1000000,
+    "news_event_blackout_minutes": 30,
+    "avoid_first_minutes": 15,
+    "avoid_last_minutes": 15
+  },
+  "execution": {
+    "max_slippage_percent": 0.5,
+    "max_signal_age_seconds": 5,
+    "require_confirmation": true,
+    "min_confirmation_sources": 2
+  },
+  "monitoring": {
+    "daily_review_enabled": true,
+    "weekly_strategy_review_enabled": true,
+    "monthly_rules_adjustment_enabled": true
+  },
+  "emergency_protocols": {
+    "kill_switch_enabled": true,
+    "kill_switch_daily_loss_percent": 15.0,
+    "position_reduction_enabled": true,
+    "position_reduction_amount": 0.25,
+    "position_reduction_consecutive_loss_days": 3
+  },
+  "performance_targets": {
+    "min_win_rate_percent": 50.0,
+    "min_profit_factor": 1.5,
+    "max_drawdown_percent": 15.0,
+    "min_sharpe_ratio": 1.0,
+    "min_monthly_return_percent": 3.0
+  },
+  "scaling": {
+    "performance_based_scaling_enabled": true,
+    "scale_up_percent": 10.0,
+    "scale_down_percent": 20.0
+  },
+  "compliance": {
+    "no_front_running": true,
+    "execution_delay_seconds": 1,
+    "whitelist_only": true,
+    "approved_instruments": [
+      "FOREX",
+      "STOCKS",
+      "ETF",
+      "CRYPTO"
+    ]
+  }
+}
