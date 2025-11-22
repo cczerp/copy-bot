@@ -1,0 +1,47 @@
+{
+  "name": "polygon-arbitrage-monitor",
+  "version": "1.0.0",
+  "description": "Research-grade Polygon transaction monitor and arbitrage simulator (academic use only)",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "simulate": "tsx src/simulator.ts"
+  },
+  "keywords": [
+    "polygon",
+    "defi",
+    "arbitrage",
+    "monitoring",
+    "research",
+    "simulation"
+  ],
+  "author": "Arbitrage Research Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "ethers": "^6.10.0",
+    "dotenv": "^16.3.1",
+    "pino": "^8.17.2",
+    "ws": "^8.14.2",
+    "decimal.js": "^10.4.3",
+    "@aave/core-v3": "^1.19.16",
+    "@balancer-labs/v3-deployments": "^1.0.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/ws": "^8.5.10",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "tsx": "^4.7.0",
+    "vitest": "^1.1.1"
+  }
+}
